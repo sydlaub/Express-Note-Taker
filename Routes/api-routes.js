@@ -29,7 +29,7 @@ module.exports = function(app) {
         data.push(newNote);
 
         // write the updated data JSON object back to the db.json file
-        fs.writeFileSync("/db/db.json", JSON.stringify(data), function(err) {
+        fs.writeFileSync("./db/db.json", JSON.stringify(data), function(err) {
             if (err) {
                 console.log(err);
             };

@@ -10,13 +10,13 @@ const PORT = process.env.PORT || 3001;
 // middleware set up
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use("./Develop/public/assets", express.static(__dirname + "./Develop/public/assets"));
+app.use( express.static("public"));
 
-require("./Develop/Routes/api-routes")(app);
-require("./Develop/Routes/html-routes")(app);
+require("./Routes/api-routes")(app);
+require("./Routes/html-routes")(app);
 
 app.listen(PORT, function(){
-    console.log("App listening on PORT" + PORT);
+    console.log("App listening on PORT " + PORT);
 });
 
 // GIVEN a note - taking application
