@@ -8,8 +8,6 @@ This is a Note Taker application that can be used to write and save notes. The a
 
 [GitHub Repository Link](https://github.com/sydlaub/Express-Note-Taker)
 
-[Walkthrough Video]()
-
 ## Screenshots
 Application home page
 ![Landing Page](./images/Note-Taker-Landing-Page.png)
